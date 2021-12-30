@@ -15,9 +15,11 @@ class DataBase:
     def get_account(self):
         pass
 
+    def master_password(self):
+        pass
 
-# conn.commit()
+    def close(self):
+        self.conn.commit()
+        self.cur.close()
+        self.conn.close()
 
-# cur.close()
-
-# conn.close()
